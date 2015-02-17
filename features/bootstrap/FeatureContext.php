@@ -31,15 +31,13 @@ class FeatureContext extends MinkContext
         // Initialize your context here
     }
 
-//
-// Place your definition and hook methods here:
-//
-//    /**
-//     * @Given /^I have done something with "([^"]*)"$/
-//     */
-//    public function iHaveDoneSomethingWith($argument)
-//    {
-//        doSomethingWith($argument);
-//    }
-//
+    /**
+     * @When /^I search for "([^"]*)"$/
+     */
+    public function iSearchFor($arg1)
+    {
+        $this->fillField("Search text:", $arg1);
+        $this->pressButton("Søk");
+    }
+
 }

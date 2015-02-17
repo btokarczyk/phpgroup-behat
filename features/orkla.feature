@@ -5,6 +5,5 @@ Feature: Orkla search
 
   Scenario:
     Given I go to "http://orkla.no"
-    When I fill in "Search text:" with "smash"
-    And I press "Søk"
+    When I szukam for "smash"
     Then I should see "SMASH!"
