@@ -5,3 +5,4 @@ default:
   extensions:
     Behat\MinkExtension\Extension:
       goutte: ~
+      selenium2: ~
